@@ -1,15 +1,15 @@
 {
   "name": "countdown",
   "version": "1.0.0",
-  "description": "",
+  "description": "A countdown numbers game solver",
   "main": "countdown.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["countdown", "numbers", "game", "solver"],
+  "author": "Emil Ong <emilong@emilong.com>",
+  "license": "WTFPL",
   "devDependencies": {
     "jest": "^20.0.4"
   }
