@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+if (process.argv.length < 4) {
+  console.log("usage: solve <target> [<number> <number>...]");
+}
+
+const { solve } = require("./countdown");
+
+const check = formula => `${formula} = ${eval(formula)}`;
+
+const [, , targetAsString, ...numbersAsStrings] = process.argv;
+const target = parseInt(targetAsString, 10);
+const numbers = numbersAsStrings.map(n => parseInt(n, 10));
+console.log(target, numbers);
+console.log();
+console.log(solve(target, numbers).map(check).join("\n"));
